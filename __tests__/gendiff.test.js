@@ -8,10 +8,11 @@ const __dirname = dirname(__filename);
 
 const getFixturePath = (filename) => path.join(__dirname, '..', '__fixtures__', filename);
 const readFile = (filename) => fs.readFileSync(getFixturePath(filename), 'utf-8');
+const extensions = ['json', 'yml'];
 
-test('json to stylish', () => {
-  const file1 = getFixturePath('file1.json');
-  const file2 = getFixturePath('file2.json');
+test.each(extensions)('stylish', (extension) => {
+  const file1 = getFixturePath(`file1.${extension}`);
+  const file2 = getFixturePath(`file2.${extension}`);
   const stylishOutput = readFile('stylish');
   expect(gendiff(file1, file2)).toEqual(stylishOutput);
 });

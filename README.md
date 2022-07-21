@@ -30,3 +30,6 @@ CLI description:
 
 #### plain *.json files:
 [![asciicast](https://asciinema.org/a/r8nx7eTAL485LVxPPs9SeAO1N.svg)](https://asciinema.org/a/r8nx7eTAL485LVxPPs9SeAO1N)
+
+#### plain *.yml/*.yaml files:
+[![asciicast](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ.svg)](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ)
