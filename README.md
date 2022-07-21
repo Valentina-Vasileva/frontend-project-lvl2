@@ -1,6 +1,8 @@
 ### Hexlet tests and linter status:
 [![Actions Status](https://github.com/Valentina-Vasileva/frontend-project-lvl2/workflows/hexlet-check/badge.svg)](https://github.com/Valentina-Vasileva/frontend-project-lvl2/actions)
 [![Node.js CI](https://github.com/Valentina-Vasileva/frontend-project-lvl2/workflows/Node.js%20CI/badge.svg)](https://github.com/Valentina-Vasileva/frontend-project-lvl2/actions)
+[![Maintainability](https://api.codeclimate.com/v1/badges/515ee3565c72fd100f31/maintainability)](https://codeclimate.com/github/Valentina-Vasileva/frontend-project-lvl2/maintainability)
+[![Test Coverage](https://api.codeclimate.com/v1/badges/515ee3565c72fd100f31/test_coverage)](https://codeclimate.com/github/Valentina-Vasileva/frontend-project-lvl2/test_coverage)
 
 GENDIFF
 ========
