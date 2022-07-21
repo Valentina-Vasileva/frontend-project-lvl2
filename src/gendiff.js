@@ -10,12 +10,14 @@ const getData = (filepath) => {
   return readFileSync(absolutePath);
 };
 
+const getDataFormat = (filePath) => path.extname(filePath).substring(1);
+
 const genDiff = (filepath1, filepath2) => {
   const data1 = getData(filepath1);
   const data2 = getData(filepath2);
 
-  const parsedData1 = parse(data1, filepath1.split('.').pop());
-  const parsedData2 = parse(data2, filepath1.split('.').pop());
+  const parsedData1 = parse(data1, getDataFormat(filepath1));
+  const parsedData2 = parse(data2, getDataFormat(filepath2));
 
   const diff = buildDiff(parsedData1, parsedData2);
 
