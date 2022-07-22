@@ -10,21 +10,24 @@ GENDIFF
 A JS package which shows difference between two files (json, yml/yaml).
 
 ## Installation
-```console
+
 $ git clone git@github.com:Valentina-Vasileva/frontend-project-lvl2.git
 $ cd frontend-project-lvl2
 $ npm ci
 $ npm link
-```
+
 
 Usage
 -----
-    $ gendiff [--format <fmt>] <path_to_file1> <path_to_file2>
+```console
+$ gendiff [--format <fmt>] <path_to_file1> <path_to_file2>
+```
 
 CLI description:
-
-    $ gendiff -h
-    $ gendiff --help
+```console
+$ gendiff -h
+$ gendiff --help
+```
 
 ### Examples of using the package
 
