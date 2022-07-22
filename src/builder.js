@@ -5,7 +5,7 @@ const createNode = (key, type, oldValue, newValue, children = null) => ({
   type,
   oldValue,
   newValue,
-  children
+  children,
 });
 
 const buildDiff = (object1, object2) => {
@@ -15,7 +15,7 @@ const buildDiff = (object1, object2) => {
 
   const diff = keys.map((key) => {
     if (Object.hasOwn(object1, key) && !Object.hasOwn(object2, key)) {
-      return createNode(key, 'deleted', object1[key], null, );
+      return createNode(key, 'deleted', object1[key], null);
     }
 
     if (!Object.hasOwn(object1, key) && Object.hasOwn(object2, key)) {

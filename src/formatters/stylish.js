@@ -1,9 +1,18 @@
-import _ from "lodash";
+import _ from 'lodash';
 
-function format(data)
-{
-  return formatToStylish(data, 1);
-}
+const stringify = (value, level) => {
+  if (_.isObject(value)) {
+    const indent = ' '.repeat(level * 4);
+    const keys = Object.keys(value);
+    const formattedValue = keys.map((key) => {
+      const childValue = stringify(value[key], level + 1);
+      return `${indent}    ${key}: ${childValue}`;
+    }).join('\n');
+    return `{\n${formattedValue}\n${indent}}`;
+  }
+
+  return value;
+};
 
 const formatToStylish = (data, level) => {
   const indent = ' '.repeat((level - 1) * 4);
@@ -34,18 +43,8 @@ const formatToStylish = (data, level) => {
   return `{\n${formattedString}\n${indent}}`;
 };
 
-const stringify = (value, level) => {
-  if (_.isObject(value)) {
-    const indent = " ".repeat(level * 4);
-    const keys = Object.keys(value);
-    const formattedValue = keys.map((key) => {
-      const childValue = stringify(value[key], level + 1);
-      return `${indent}    ${key}: ${childValue}`;
-    }).join("\n");
-    return `{\n${formattedValue}\n${indent}}`;
-  }
-
-  return value;
-};
+function format(data) {
+  return formatToStylish(data, 1);
+}
 
 export default format;
