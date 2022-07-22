@@ -7,7 +7,7 @@
 GENDIFF
 ========
 
-A JS package which shows difference between two files (json).
+A JS package which shows difference between two files (json, yml/yaml).
 
 ## Installation
 ```console
@@ -33,3 +33,9 @@ CLI description:
 
 #### plain *.yml/*.yaml files:
 [![asciicast](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ.svg)](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ)
+
+#### complex *.json files:
+[![asciicast](https://asciinema.org/a/i6cpcy6YGHEC58KRIX1vg1wTw.svg)](https://asciinema.org/a/i6cpcy6YGHEC58KRIX1vg1wTw)
+
+#### complex *.yml/*.yaml files:
+[![asciicast](https://asciinema.org/a/2EgPSbVw3gr9pqmIXWHFSdD4c.svg)](https://asciinema.org/a/2EgPSbVw3gr9pqmIXWHFSdD4c)
