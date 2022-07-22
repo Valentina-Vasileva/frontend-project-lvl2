@@ -1,6 +1,6 @@
 import formatToStylish from './formatters/stylish.js';
 
-const format = (data, form = 'stylish') => {
+const format = (data, form) => {
   switch (form) {
     case 'stylish':
       return formatToStylish(data);

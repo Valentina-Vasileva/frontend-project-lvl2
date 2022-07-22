@@ -14,5 +14,5 @@ test.each(extensions)('stylish', (extension) => {
   const file1 = getFixturePath(`file1.${extension}`);
   const file2 = getFixturePath(`file2.${extension}`);
   const stylishOutput = readFile('stylish');
-  expect(gendiff(file1, file2)).toEqual(stylishOutput);
+  expect(gendiff(file1, file2, 'stylish')).toEqual(stylishOutput);
 });
