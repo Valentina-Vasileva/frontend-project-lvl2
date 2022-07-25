@@ -2,7 +2,7 @@ import { readFileSync } from 'node:fs';
 import * as path from 'node:path';
 import * as process from 'node:process';
 import parse from './parsers.js';
-import format from './formatters.js';
+import format from './formatters/index.js';
 import buildDiff from './builder.js';
 
 const getData = (filepath) => {

@@ -1,5 +1,5 @@
-import formatToStylish from './formatters/stylish.js';
-import formatToPlain from './formatters/plain.js';
+import formatToStylish from './stylish.js';
+import formatToPlain from './plain.js';
 
 const format = (data, form) => {
   switch (form) {
