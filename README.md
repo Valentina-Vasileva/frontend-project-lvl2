@@ -7,7 +7,7 @@
 GENDIFF
 ========
 
-A JS package which shows difference between two files (json, yml/yaml).
+A JS package which shows difference between two files (json, yml/yaml) in different formats (stylish, plain).
 
 ## Installation
 
@@ -23,6 +23,10 @@ Usage
 $ gendiff [--format <fmt>] <path_to_file1> <path_to_file2>
 ```
 
+Formats:
+- stylish
+- plain
+
 CLI description:
 ```console
 $ gendiff -h
@@ -31,14 +35,17 @@ $ gendiff --help
 
 ### Examples of using the package
 
-#### plain *.json files:
+#### plain *.json files to stylish:
 [![asciicast](https://asciinema.org/a/r8nx7eTAL485LVxPPs9SeAO1N.svg)](https://asciinema.org/a/r8nx7eTAL485LVxPPs9SeAO1N)
 
-#### plain *.yml/*.yaml files:
+#### plain *.yml/*.yaml files to stylish:
 [![asciicast](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ.svg)](https://asciinema.org/a/wcBUZkGl7jchpY3IhlmzawoeJ)
 
-#### complex *.json files:
+#### complex *.json files to stylish:
 [![asciicast](https://asciinema.org/a/i6cpcy6YGHEC58KRIX1vg1wTw.svg)](https://asciinema.org/a/i6cpcy6YGHEC58KRIX1vg1wTw)
 
-#### complex *.yml/*.yaml files:
+#### complex *.yml/*.yaml files to stylish:
 [![asciicast](https://asciinema.org/a/2EgPSbVw3gr9pqmIXWHFSdD4c.svg)](https://asciinema.org/a/2EgPSbVw3gr9pqmIXWHFSdD4c)
+
+#### complex *.json files to plain:
+[![asciicast](https://asciinema.org/a/kTf4WNG1zHsMS5pEon9LWs8xg.svg)](https://asciinema.org/a/kTf4WNG1zHsMS5pEon9LWs8xg)
