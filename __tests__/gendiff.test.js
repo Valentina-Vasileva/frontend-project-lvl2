@@ -17,4 +17,5 @@ test.each(extensions)('stylish', (extension) => {
 
   expect(gendiff(file1, file2, 'stylish')).toEqual(readFile('stylish'));
   expect(gendiff(file1, file2, 'plain')).toEqual(readFile('plain'));
+  expect(gendiff(file1, file2, 'json')).toEqual(readFile('json'));
 });

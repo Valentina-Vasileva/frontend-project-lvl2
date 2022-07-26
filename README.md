@@ -7,7 +7,7 @@
 GENDIFF
 ========
 
-A JS package which shows difference between two files (json, yml/yaml) in different formats (stylish, plain).
+A JS package which shows difference between two files (json, yml/yaml) in different formats.
 
 ## Installation
 
@@ -26,6 +26,7 @@ $ gendiff [--format <fmt>] <path_to_file1> <path_to_file2>
 Formats:
 - stylish
 - plain
+- json
 
 CLI description:
 ```console
@@ -49,3 +50,6 @@ $ gendiff --help
 
 #### complex *.json files to plain:
 [![asciicast](https://asciinema.org/a/kTf4WNG1zHsMS5pEon9LWs8xg.svg)](https://asciinema.org/a/kTf4WNG1zHsMS5pEon9LWs8xg)
+
+#### complex *.json files to json:
+[![asciicast](https://asciinema.org/a/1vwDhmrS4U7Uvj6U6J2WxWQnu.svg)](https://asciinema.org/a/1vwDhmrS4U7Uvj6U6J2WxWQnu)

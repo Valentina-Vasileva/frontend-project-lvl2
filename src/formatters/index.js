@@ -8,7 +8,7 @@ const format = (data, form) => {
     case 'plain':
       return formatToPlain(data);
     case 'json':
-      return JSON.stringify(data);
+      return JSON.stringify(data, null, ' ');
     default:
       throw new Error(`The file format '${form}' is not supported`);
   }
