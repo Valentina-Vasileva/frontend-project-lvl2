@@ -11,10 +11,12 @@ A JS package which shows difference between two files (json, yml/yaml) in differ
 
 ## Installation
 
+```console
 $ git clone git@github.com:Valentina-Vasileva/frontend-project-lvl2.git
 $ cd frontend-project-lvl2
 $ npm ci
 $ npm link
+```
 
 
 Usage
