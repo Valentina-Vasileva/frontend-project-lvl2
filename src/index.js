@@ -12,7 +12,7 @@ const getData = (filepath) => {
 
 const getDataFormat = (filePath) => path.extname(filePath).substring(1);
 
-const genDiff = (filepath1, filepath2, outputFormat = 'stylish') => {
+const index = (filepath1, filepath2, outputFormat = 'stylish') => {
   const data1 = getData(filepath1);
   const data2 = getData(filepath2);
 
@@ -24,4 +24,4 @@ const genDiff = (filepath1, filepath2, outputFormat = 'stylish') => {
   return format(diff, outputFormat);
 };
 
-export default genDiff;
+export default index;
